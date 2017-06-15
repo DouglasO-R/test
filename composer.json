@@ -1,0 +1,17 @@
+{
+    "name": "Test",
+    "description": "Test php poo",
+    "authors": [
+        {
+        "name":"Douglas O. Ribeiro",
+        "email":"douglasor@outlook.com"
+        }
+    ],"require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\":"src//"
+        }
+    }
+}
