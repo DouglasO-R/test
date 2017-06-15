@@ -1,12 +1,14 @@
 <?php
 require_once"../vendor/autoload.php";
 
-$db = Conteiner::getConn();
+use Pimple\Container;
 
-$produto = Conteiner::getProduto();
+$container = new Container();
 
-$list = $produto->listar();
+$container['date'] = function(){
+    return new \DateTime;
+};
 
-var_dump($list);
+var_dump($container['date']);
 
 ?>
