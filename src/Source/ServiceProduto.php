@@ -4,11 +4,13 @@ namespace Source;
 class ServiceProduto implements IServiceProduto{
     
     private $db;
+    private $produto;
 
-    public function __construct(IConn $db){
+    public function __construct(IConn $db,IProduto $produto){
         $this->db = $db->connect();
+        $this->produto = $produto;
     }
-    
+
     public function listar(){
         
         $query = "select * from produtos";

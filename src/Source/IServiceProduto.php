@@ -1,11 +1,11 @@
 <?php
 namespace Source;
 
-Interface  SeviceProduto{
+Interface  IServiceProduto{
 
     public function listar();
     public function salvar();
     public function update();
     public function delete();
-    
+
 }

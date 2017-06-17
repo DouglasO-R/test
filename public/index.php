@@ -5,8 +5,8 @@ require_once"service.php";
 
 
 
-$list = $container['produto']->listar();
+$list = $container['ServiceProduto']->listar();
 
-var_dump($list);
+require_once'lista.produto.php';
 
 ?>
